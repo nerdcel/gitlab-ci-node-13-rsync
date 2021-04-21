@@ -62,7 +62,7 @@ RUN command -v composer
 
 # Node.js
 RUN curl -sL https://deb.nodesource.com/setup_13.x -o nodesource_setup.sh
-RUN bash nodesource_set4.5
+RUN bash nodesource_setup.sh
 RUN apt-get install nodejs -y
 RUN npm install npm@6.14.5 -g
 RUN command -v node
